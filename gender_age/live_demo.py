@@ -40,7 +40,7 @@ def execute_graph(graph,img):
 	return output,userobj
 
 # open the network blob files
-blob='gendernet.graph'
+blob='agenet.graph'
 
 # categories for age and gender
 age_list=['0-2','4-6','8-12','15-20','25-32','38-43','48-53','60-100']
@@ -69,7 +69,6 @@ for frame in camera.capture_continuous(raw_image, format="bgr", use_video_port=T
 	key = cv2.waitKey(1) & 0xFF
 	raw_image.truncate(0)
 
-	
 	img=cv2.resize(img,dim)
 	# mean subtract
 	img = img.astype(numpy.float32)
@@ -83,8 +82,9 @@ for frame in camera.capture_continuous(raw_image, format="bgr", use_video_port=T
 	order = output.argsort()
 	last = len(order)-1
 	predicted=int(order[last])
-	print('the predicted gender is ' + gender_list[predicted] + ' with confidence of %3.1f%%' % (100.0*output[predicted]))
-	
+	#print('the predicted gender is ' + gender_list[predicted] + ' with confidence of %3.1f%%' % (100.0*output[predicted]))
+	print('the age range is ' + age_list[predicted] + ' with confidence of %3.1f%%' % (100.0*output[predicted]))
+
 	if key == ord("q"):
 		break
 
