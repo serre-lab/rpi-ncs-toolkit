@@ -1,6 +1,6 @@
 # rpi-ncs-toolkit
 
-With this project, we ship the disk image of a fully functional Pi OS running Raspbian Stretch on a Pi3B+, with Movidius and PiCamera related libraries, demos etc. The image can be downloaded <a href=" "> here </a>. Please follow <a href="https://thepihut.com/blogs/raspberry-pi-tutorials/17789160-backing-up-and-restoring-your-raspberry-pis-sd-card"> these </a> instructions to clone this on to your microSD card. <br>
+With this project, we ship the disk image of a fully functional Pi OS running Raspbian Stretch on a Pi3B+, with Movidius and PiCamera related libraries, demos etc. The image can be downloaded <a href="https://www.dropbox.com/s/qiwcbiruc71qj07/pi3bplus.img.tar.gz?dl=0"> here </a>. Please follow <a href="https://thepihut.com/blogs/raspberry-pi-tutorials/17789160-backing-up-and-restoring-your-raspberry-pis-sd-card"> these </a> instructions to clone this on to your microSD card. <br>
 
 This is a nice tutorial that steps through the process of installing the Neural Compute Stick (NCS) SDK in <b>API-only</b> mode 
 (note that this is important as the Pi CPU/Memory is underpowered for the full installation). <a href="https://www.pyimagesearch.com/2018/02/12/getting-started-with-the-intel-movidius-neural-compute-stick/"> Installation Tutorial </a>. This also has installation instructions for other key libraries such as OpenCV, libusb etc.
