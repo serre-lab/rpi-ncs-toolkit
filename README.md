@@ -38,5 +38,5 @@ python live_demo.py
 
 # Age Detector live demo
 cd ~/rpi-ncs-tooolkit/gender_age
-python gender_live.py
+python live_demo.py
 </pre>
